@@ -276,7 +276,6 @@ start:
 	ldr r1, =0x03
 	str r1, [r0, #GPIO_BSRR]
 	movw r1, #0xDEAD
-	.word 0xf64d61Fd
 	b start
 
 .short 0x1111

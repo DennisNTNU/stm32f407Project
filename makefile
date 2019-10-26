@@ -26,4 +26,4 @@ disassemble :
 	arm-none-eabi-objdump -d build/main.elf
 
 flash :
-	JLinkExe -device STM32F407VG -if swd -speed 4000 -CommanderScript jlinkCommandFile
+	JLinkExe -device STM32F407VG -if swd -speed 4000 -CommanderScript other/jlinkCommandFile
