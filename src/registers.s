@@ -2,6 +2,9 @@ RCC_BASE = 0x40023800
 
 // RCC; Reset Clock Control register descriptions section 7.3
 RCC_CR = 0x00    // RCC clock control register
+/* check whether PLLs are locked, enable PLLs, clock security system,
+   HSE clock bypass, HSE clock ready flag, HSE clock enable, 
+   HSI clock calibration values, HSI trimming,  */
 RCC_PLLCFGR = 0x04    // RCC PLL configuration register
 RCC_CFGR = 0x08    // RCC clock configuration register
 RCC_CIR = 0x0C    // RCC clock interrupt register
@@ -34,7 +37,7 @@ RCC_CSR = 0x74    // RCC clock control & status register
 //Reserved = 0x78
 //Reserved = 0x7C
 RCC_SSCGR = 0x80    // RCC spread spectrum clock generation register
-RCC_PLLI2CCFGR = 0x84    // RCC PLLI2C configuration register
+RCC_PLLI2SCFGR = 0x84    // RCC PLLI2C configuration register
 
 
 
@@ -60,3 +63,4 @@ GPIO_BSRR = 0x18    // port bit set/reset register
 GPIO_LCKR = 0x1C    // port configuration lock register
 GPIO_AFRL = 0x20    // alternate function low register
 GPIO_AFRH = 0x24    // alternate function high register
+
