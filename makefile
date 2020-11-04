@@ -5,13 +5,14 @@ OBJCOPY=arm-none-eabi-objcopy
 # option -am include macro expansions
 
 # for linker -T to specify linkerscript
-# -lXXX to link in library libXXX.a
-# -L is also a linker option, searhc paths for -l libraries
+# -lXXX to link in library libXXX.a or libXXX.so
+# -L is also a linker option, specify search paths for -l libraries
 # -o to specify output file name
 
 all : objcopy
 
 build/main.o : src/main.s
+	mkdir -p build
 	${AS} $^ -o build/main.o -mcpu=cortex-m4 -mthumb -g -am -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Isrc
 
 build/main.elf : build/main.o
@@ -27,3 +28,6 @@ disassemble :
 
 flash :
 	JLinkExe -device STM32F407VG -if swd -speed 4000 -CommanderScript other/jlinkCommandFile
+
+clean:
+	rm -r build
