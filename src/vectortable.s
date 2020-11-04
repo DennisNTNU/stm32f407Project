@@ -1,258 +1,258 @@
 
 .section .vectortable
-.word 0x00
-.word start
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
-.word dummy_handler
+.word 0x00             // Initial SP value
+.word start            // Reset
+.word dummy_handler    // NMI
+.word dummy_handler    // Hard Fault
+.word dummy_handler    // Memory management Fault
+.word dummy_handler    // Bus fault
+.word dummy_handler    // Usage fault
+.word dummy_handler    // reserved
+.word dummy_handler    // reserved
+.word dummy_handler    // reserved
+.word dummy_handler    // reserved
+.word dummy_handler    // SVCall
+.word dummy_handler    // Reserved for debug
+.word dummy_handler    // reserved
+.word dummy_handler    // PendSV
+.word dummy_handler    // Systick
+.word dummy_handler    // IRQ0
+.word dummy_handler    // IRQ1
+.word dummy_handler    // IRQ2
+.word dummy_handler    // IRQ3
+.word dummy_handler    // IRQ4
+.word dummy_handler    // IRQ5
+.word dummy_handler    // IRQ6
+.word dummy_handler    // IRQ7
+.word dummy_handler    // IRQ8
+.word dummy_handler    // IRQ9
+.word dummy_handler    // IRQ10
+.word dummy_handler    // IRQ11
+.word dummy_handler    // IRQ12
+.word dummy_handler    // IRQ13
+.word dummy_handler    // IRQ14
+.word dummy_handler    // IRQ15
+.word dummy_handler    // IRQ16
+.word dummy_handler    // IRQ17
+.word dummy_handler    // IRQ18
+.word dummy_handler    // IRQ19
+.word dummy_handler    // IRQ20
+.word dummy_handler    // IRQ21
+.word dummy_handler    // IRQ22
+.word dummy_handler    // IRQ23
+.word dummy_handler    // IRQ24
+.word dummy_handler    // IRQ25
+.word dummy_handler    // IRQ26
+.word dummy_handler    // IRQ27
+.word dummy_handler    // IRQ28
+.word dummy_handler    // IRQ29
+.word dummy_handler    // IRQ30
+.word dummy_handler    // IRQ31
+.word dummy_handler    // IRQ32
+.word dummy_handler    // IRQ33
+.word dummy_handler    // IRQ34
+.word dummy_handler    // IRQ35
+.word dummy_handler    // IRQ36
+.word dummy_handler    // IRQ37
+.word dummy_handler    // IRQ38
+.word dummy_handler    // IRQ39
+.word dummy_handler    // IRQ40
+.word dummy_handler    // IRQ41
+.word dummy_handler    // IRQ42
+.word dummy_handler    // IRQ43
+.word dummy_handler    // IRQ44
+.word dummy_handler    // IRQ45
+.word dummy_handler    // IRQ46
+.word dummy_handler    // IRQ47
+.word dummy_handler    // IRQ48
+.word dummy_handler    // IRQ49
+.word dummy_handler    // IRQ50
+.word dummy_handler    // IRQ51
+.word dummy_handler    // IRQ52
+.word dummy_handler    // IRQ53
+.word dummy_handler    // IRQ54
+.word dummy_handler    // IRQ55
+.word dummy_handler    // IRQ56
+.word dummy_handler    // IRQ57
+.word dummy_handler    // IRQ58
+.word dummy_handler    // IRQ59
+.word dummy_handler    // IRQ60
+.word dummy_handler    // IRQ61
+.word dummy_handler    // IRQ62
+.word dummy_handler    // IRQ63
+.word dummy_handler    // IRQ64
+.word dummy_handler    // IRQ65
+.word dummy_handler    // IRQ66
+.word dummy_handler    // IRQ67
+.word dummy_handler    // IRQ68
+.word dummy_handler    // IRQ69
+.word dummy_handler    // IRQ70
+.word dummy_handler    // IRQ71
+.word dummy_handler    // IRQ72
+.word dummy_handler    // IRQ73
+.word dummy_handler    // IRQ74
+.word dummy_handler    // IRQ75
+.word dummy_handler    // IRQ76
+.word dummy_handler    // IRQ77
+.word dummy_handler    // IRQ78
+.word dummy_handler    // IRQ79
+.word dummy_handler    // IRQ80
+.word dummy_handler    // IRQ81
+.word dummy_handler    // IRQ82
+.word dummy_handler    // IRQ83
+.word dummy_handler    // IRQ84
+.word dummy_handler    // IRQ85
+.word dummy_handler    // IRQ86
+.word dummy_handler    // IRQ87
+.word dummy_handler    // IRQ88
+.word dummy_handler    // IRQ89
+.word dummy_handler    // IRQ90
+.word dummy_handler    // IRQ91
+.word dummy_handler    // IRQ92
+.word dummy_handler    // IRQ93
+.word dummy_handler    // IRQ94
+.word dummy_handler    // IRQ95
+.word dummy_handler    // IRQ96
+.word dummy_handler    // IRQ97
+.word dummy_handler    // IRQ98
+.word dummy_handler    // IRQ99
+.word dummy_handler    // IRQ100
+.word dummy_handler    // IRQ101
+.word dummy_handler    // IRQ102
+.word dummy_handler    // IRQ103
+.word dummy_handler    // IRQ104
+.word dummy_handler    // IRQ105
+.word dummy_handler    // IRQ106
+.word dummy_handler    // IRQ107
+.word dummy_handler    // IRQ108
+.word dummy_handler    // IRQ109
+.word dummy_handler    // IRQ110
+.word dummy_handler    // IRQ111
+.word dummy_handler    // IRQ112
+.word dummy_handler    // IRQ113
+.word dummy_handler    // IRQ114
+.word dummy_handler    // IRQ115
+.word dummy_handler    // IRQ116
+.word dummy_handler    // IRQ117
+.word dummy_handler    // IRQ118
+.word dummy_handler    // IRQ119
+.word dummy_handler    // IRQ120
+.word dummy_handler    // IRQ121
+.word dummy_handler    // IRQ122
+.word dummy_handler    // IRQ123
+.word dummy_handler    // IRQ124
+.word dummy_handler    // IRQ125
+.word dummy_handler    // IRQ126
+.word dummy_handler    // IRQ127
+.word dummy_handler    // IRQ128
+.word dummy_handler    // IRQ129
+.word dummy_handler    // IRQ130
+.word dummy_handler    // IRQ131
+.word dummy_handler    // IRQ132
+.word dummy_handler    // IRQ133
+.word dummy_handler    // IRQ134
+.word dummy_handler    // IRQ135
+.word dummy_handler    // IRQ136
+.word dummy_handler    // IRQ137
+.word dummy_handler    // IRQ138
+.word dummy_handler    // IRQ139
+.word dummy_handler    // IRQ140
+.word dummy_handler    // IRQ141
+.word dummy_handler    // IRQ142
+.word dummy_handler    // IRQ143
+.word dummy_handler    // IRQ144
+.word dummy_handler    // IRQ145
+.word dummy_handler    // IRQ146
+.word dummy_handler    // IRQ147
+.word dummy_handler    // IRQ148
+.word dummy_handler    // IRQ149
+.word dummy_handler    // IRQ150
+.word dummy_handler    // IRQ151
+.word dummy_handler    // IRQ152
+.word dummy_handler    // IRQ153
+.word dummy_handler    // IRQ154
+.word dummy_handler    // IRQ155
+.word dummy_handler    // IRQ156
+.word dummy_handler    // IRQ157
+.word dummy_handler    // IRQ158
+.word dummy_handler    // IRQ159
+.word dummy_handler    // IRQ160
+.word dummy_handler    // IRQ161
+.word dummy_handler    // IRQ162
+.word dummy_handler    // IRQ163
+.word dummy_handler    // IRQ164
+.word dummy_handler    // IRQ165
+.word dummy_handler    // IRQ166
+.word dummy_handler    // IRQ167
+.word dummy_handler    // IRQ168
+.word dummy_handler    // IRQ169
+.word dummy_handler    // IRQ170
+.word dummy_handler    // IRQ171
+.word dummy_handler    // IRQ172
+.word dummy_handler    // IRQ173
+.word dummy_handler    // IRQ174
+.word dummy_handler    // IRQ175
+.word dummy_handler    // IRQ176
+.word dummy_handler    // IRQ177
+.word dummy_handler    // IRQ178
+.word dummy_handler    // IRQ179
+.word dummy_handler    // IRQ180
+.word dummy_handler    // IRQ181
+.word dummy_handler    // IRQ182
+.word dummy_handler    // IRQ183
+.word dummy_handler    // IRQ184
+.word dummy_handler    // IRQ185
+.word dummy_handler    // IRQ186
+.word dummy_handler    // IRQ187
+.word dummy_handler    // IRQ188
+.word dummy_handler    // IRQ189
+.word dummy_handler    // IRQ190
+.word dummy_handler    // IRQ191
+.word dummy_handler    // IRQ192
+.word dummy_handler    // IRQ193
+.word dummy_handler    // IRQ194
+.word dummy_handler    // IRQ195
+.word dummy_handler    // IRQ196
+.word dummy_handler    // IRQ197
+.word dummy_handler    // IRQ198
+.word dummy_handler    // IRQ199
+.word dummy_handler    // IRQ200
+.word dummy_handler    // IRQ201
+.word dummy_handler    // IRQ202
+.word dummy_handler    // IRQ203
+.word dummy_handler    // IRQ204
+.word dummy_handler    // IRQ205
+.word dummy_handler    // IRQ206
+.word dummy_handler    // IRQ207
+.word dummy_handler    // IRQ208
+.word dummy_handler    // IRQ209
+.word dummy_handler    // IRQ210
+.word dummy_handler    // IRQ211
+.word dummy_handler    // IRQ212
+.word dummy_handler    // IRQ213
+.word dummy_handler    // IRQ214
+.word dummy_handler    // IRQ215
+.word dummy_handler    // IRQ216
+.word dummy_handler    // IRQ217
+.word dummy_handler    // IRQ218
+.word dummy_handler    // IRQ219
+.word dummy_handler    // IRQ220
+.word dummy_handler    // IRQ221
+.word dummy_handler    // IRQ222
+.word dummy_handler    // IRQ223
+.word dummy_handler    // IRQ224
+.word dummy_handler    // IRQ225
+.word dummy_handler    // IRQ226
+.word dummy_handler    // IRQ227
+.word dummy_handler    // IRQ228
+.word dummy_handler    // IRQ229
+.word dummy_handler    // IRQ230
+.word dummy_handler    // IRQ231
+.word dummy_handler    // IRQ232
+.word dummy_handler    // IRQ233
+.word dummy_handler    // IRQ234
+.word dummy_handler    // IRQ235
+.word dummy_handler    // IRQ236
+.word dummy_handler    // IRQ237
+.word dummy_handler    // IRQ238
+.word dummy_handler    // IRQ239
